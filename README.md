@@ -2,7 +2,7 @@
 
 The mockup is accessible at https://mock-ai.netlify.app
 
-Due to the size of the audio file and the simplified method of serving it, it may take 20-60 seconds for the sound wave visualizer to fully load.
+Due to the size of the audio file and the simplified method of serving it, it may take 20-40 seconds for the sound wave visualizer to fully load.
 
 Here is the mock interview I used: https://www.youtube.com/watch?v=clMJ8BwCGa0&t=109s
 
@@ -32,3 +32,12 @@ Sound Wave Visualizer: This area allows users to visualize the audio file as a s
 AI Improvements: This area allows users to understand the sections of the interview. Each section initially displays the section start and end times, title, and number of AI improvements. Users can click on a section to see an expanded view. This view shows a summary of the section as well as the list of AI improvements. Users can click on the summary or improvements time stamps to move both the audio and transcript to that time.
 
 Overall, I focused on the core functionality necessary to visualize and understand the interview, as well as a few supporting features to enhance user experience.
+
+## Security Considerations
+
+Here are some of the data security and privacy precautions I have used before and would be applicable in this type of web application:
+- Check users are authenticated and authorized when requesting data
+- Define roles and permission in database to ensure table data/files are only provided to proper users
+- Use HTTPS communication to ensure encryption of data in client-server communication
+- Ensure file and data storage is encrypted and secure at rest
+- Enable rate limiting in key areas to prevent DDOS

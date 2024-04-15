@@ -1,0 +1,42 @@
+.visualizerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .waveformContainer {
+    min-width: 100%;
+  }
+  
+  .controlsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .controlButton {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(24, 24, 27);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  
+  .controlButton:hover {
+    background-color: rgb(80, 80, 80);
+  }
+
+  .timeContainer {
+    margin-left: 5px;
+  }
+
+  .playTime {
+    font-size: .875rem;
+  }
+  
